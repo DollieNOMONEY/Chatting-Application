@@ -17,9 +17,11 @@ namespace Chatting_Application
             InitializeComponent();
         }
 
-        private void txtBox_EnterPass_TextChanged(object sender, EventArgs e)
+        private void btr_login_Click(object sender, EventArgs e)
         {
-
+            Form form = new LoginForm();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Chatting_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Chat());
+            Application.Run(new LoginForm());
         }
     }
 }
