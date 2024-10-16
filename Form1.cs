@@ -17,71 +17,48 @@ namespace Chatting_Application
         public Chat()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
+            pa2_messages.Visible = false;
         }
 
         private void SendMessage(string message)
         {
             if (message == "") {return;}
-            textBox1.Size = defaultrPosSize.Size;
-            textBox1.Location = defaultrPosSize.Location;
-            textBox1.Text = "";
+            txtBox_SendMsg.Size = defaultrPosSize.Size;
+            txtBox_SendMsg.Location = defaultrPosSize.Location;
+            txtBox_SendMsg.Text = "";
             amountOfEnters = 0;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        private void txtBox_SendMsg_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && e.Shift)
             {
                 if (amountOfEnters <= 12)
                 {
                     amountOfEnters++;
-                    textBox1.Size = new Size(textBox1.Width, textBox1.Height + 20);
-                    textBox1.Location = new Point(textBox1.Location.X, textBox1.Location.Y - 20);
+                    txtBox_SendMsg.Size = new Size(txtBox_SendMsg.Width, txtBox_SendMsg.Height + 20);
+                    txtBox_SendMsg.Location = new Point(txtBox_SendMsg.Location.X, txtBox_SendMsg.Location.Y - 20);
                 }
             }
             else if (e.KeyCode == Keys.Enter)
             {
-                SendMessage(textBox1.Text);
+                SendMessage(txtBox_SendMsg.Text);
             }
+        }
+
+        private void btr_globalchat_Click(object sender, EventArgs e)
+        {
+            Form form = new PopupJoin();
+            form.ShowDialog();
         }
 
         private void btr_Send_Click(object sender, EventArgs e)
         {
-            SendMessage(textBox1.Text);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }

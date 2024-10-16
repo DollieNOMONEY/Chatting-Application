@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.txt_label);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox1);
@@ -61,20 +61,20 @@
             // txt_label
             // 
             this.txt_label.AutoSize = true;
-            this.txt_label.Font = new System.Drawing.Font("Libre Baskerville", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_label.Font = new System.Drawing.Font("Verdana", 20F);
             this.txt_label.Location = new System.Drawing.Point(494, 146);
             this.txt_label.Name = "txt_label";
-            this.txt_label.Size = new System.Drawing.Size(126, 33);
+            this.txt_label.Size = new System.Drawing.Size(125, 32);
             this.txt_label.TabIndex = 0;
             this.txt_label.Text = "Register";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Libre Baskerville", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(366, 345);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 20);
+            this.label3.Size = new System.Drawing.Size(186, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "Re-enter Password:";
             // 
@@ -114,20 +114,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Libre Baskerville", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(366, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.Size = new System.Drawing.Size(154, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Enter Password:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Libre Baskerville", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(366, 237);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 20);
+            this.label1.Size = new System.Drawing.Size(157, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter Username:";
             // 
